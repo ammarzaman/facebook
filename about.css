@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #081b29;
+  color: #ededed;
+  background: rgba(0, 0, 0, 0.6) url("images/luxa.org-opacity-changed-shahadat-rahman-BfrQnKBulYQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 98vw;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ededed;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.logo:hover {
+  color: #00abf0;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.navbar a {
+  width: 10vw;
+  text-decoration: none;
+  color: #ededed;
+  margin-right: 20px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00abf0;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.navbar a:hover{
+    position: relative;
+    bottom: 2px;
+}
+
+.home {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  margin-top: 100px;
+}
+
+
+.home-content h1 {
+  margin-top: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.home-content h3 {
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 0;
+  color: #00abf0;
+}
+
+.home-content p {
+  font-size: 19px;
+  padding: 10px 0;
+  color: #ededed;
+  margin-top: 10px;
+  word-spacing: 2px;
+}
+
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 13px;
+    width: 170px;
+  }
+
+  .header{
+    background: fixed;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+}
